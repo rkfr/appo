@@ -17,6 +17,7 @@ body {
 
 h1,
 h2,
+h3,
 p,
 ul,
 li {
@@ -25,7 +26,8 @@ li {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-weight: 500;
 }
 
@@ -35,6 +37,10 @@ h1 {
 
 h2 {
     font-size: 1.875rem;
+}
+
+h3 {
+    font-size: 1.0625rem;
 }
 
 ul,
@@ -185,4 +191,38 @@ a {
     background-color: rgb(0, 255, 240);
     left: 50%;
     transform: translateX(-50%);
+}
+
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-card {
+    padding: 25px 23px 30px 28px;
+    text-align: center;
+    max-width: 272px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4.8px 0.2px rgba(30, 43, 63, 0.1);
+}
+
+.services-card__image-container {
+    width: 118px;
+    height: 106px;
+    margin: 0 auto 25px auto;
+}
+
+.services-card__image {
+    width: 100%;
+    height: 100%;
+}
+
+.services-card__title {
+    color: #233148;
+    margin-bottom: 28px;
+}
+
+.services-card__text {
+    line-height: 1.65rem;
 }
