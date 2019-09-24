@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: "Dosis-Medium", sans-serif;
+    font-size: 0.875rem;
+    color: rgb(151, 164, 190);
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.875rem;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 10px 23px 13px 28px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-primary {
+    color: #233148;
+    background-color: rgb(0, 255, 240);
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #fff;
+    padding: 9px 22px 12px 27px;
+    border: 1px solid #fff;
+}
+
+.text-primary {
+    color: #97a4be;
+}
+
+.logo {
+    display: block;
+    font-size: 2.187rem;
+    color: rgb(0, 255, 240);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.logo::after {
+    display: block;
+    content: "\AE";
+    position: absolute;
+    right: -.8rem;
+    top: .3rem;
+    font-size: 1.32rem;
+}
+
+/* start header */
+.header {
+    background-color: rgb(34, 48, 71);
+}
+
+.navbar {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu-wrapper {
+    flex-basis: 203px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu__link {
+    color: #fff;
+}
+
+.separator {
+    height: 1px;
+    background-color: rgb(78, 89, 108);
+}
+
+.offer {
+    padding-top: 195px;
+    padding-bottom: 108px;
+    position: relative;
+}
+
+.choose-way {
+    max-width: 422px;
+    margin-left: 96px;
+}
+
+.choose-way__title {
+    color: #fff;
+    margin-bottom: 55px;
+}
+
+.choose-way__text {
+    margin-bottom: 58px;
+}
+
+.buttons-group > .button-secondary {
+    margin-left: 28px;
+}
+
+.phone-container {
+    position: absolute;
+    right: 470px;
+    top: 130px;
+}
+
+.phone {
+    display: block;
+    height: 585px;
+    width: 282px;
+}
+/* header end */
+
+/* services start */
+.services {
+    padding-top: 203px;
+    padding-bottom: 119px;
+    background-color: #fff;
+}
+
+.services__title {
+    color: #233148;
+    margin: 0 auto;
+    max-width: 348px;
+    text-align: center;
+    margin-bottom: 156px;
+    position: relative;
+}
+
+.services__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 97px;
+    height: 4px;
+    bottom: -88px;
+    background-color: rgb(0, 255, 240);
+    left: 50%;
+    transform: translateX(-50%);
+}
