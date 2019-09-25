@@ -88,10 +88,6 @@ p {
     color: #233148;
 }
 
-.text-primary {
-    color: #97a4be;
-}
-
 .logo {
     display: block;
     font-size: 2.187rem;
@@ -261,7 +257,6 @@ p {
 /* start app-presentation */
 .app-presentation {
     padding-top: 112px;
-    padding-bottom: 102px;
     background-color: #fff;
 }
 
@@ -304,6 +299,12 @@ p {
     margin: 0;
 }
 
+.news-phone__image {
+    display: block;
+    position: relative;
+    top: 60px;
+}
+
 .advantages {
     flex-basis: 544px;
     margin-left: 0;
@@ -312,10 +313,13 @@ p {
 .advantages__item {
     display: block;
     position: relative;
-    margin-bottom: 20px;
     padding: 30px 0 30px 85px;
     background-color: #fff;
     box-shadow: 0px 4px 10px 0px rgba(35, 39, 51, 0.1);
+}
+
+.advantages__item:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .advantages__item::before {
@@ -343,4 +347,62 @@ p {
 
 .advantages__item--flat::before {
     background: url(../img/advantages-sprite.png) -166px -7px no-repeat;
+}
+
+.requirements-container {
+    background-color: #f5f6fa;
+    padding-top: 74px;
+}
+
+.requirements {
+    display: flex;
+}
+
+.requirements-offer {
+    padding-top: 70px;
+    flex-basis: 474px;
+    text-align: right;
+}
+
+.requirements-offer__title {
+    margin-bottom: 43px;
+}
+
+.requirements-list {
+    margin-bottom: 44px;
+    margin-left: auto;
+    max-width: 86px;
+}
+
+.requirements-list__item {
+    position: relative;
+    font-size: 1.0625rem;
+    color: #000;
+    opacity: .85;
+    font-family: "Dosis-Bold";
+    padding-right: 36px;
+}
+
+.requirements-list__item:first-child {
+    margin-bottom: 25px;
+}
+
+.requirements-list__item::before {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: url(../img/checkmark.png) center center no-repeat;
+    background-size: 100%;
+    left: -40px;
+    top: 0;
+}
+
+.requirements-figure {
+    margin: 0 0 0 auto;
+    max-width: 538px;
+}
+
+.requirements-figure__image {
+    display: block;
 }
