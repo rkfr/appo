@@ -80,6 +80,14 @@ p {
     border: 1px solid #fff;
 }
 
+.title-primary {
+    color: #000;
+}
+
+.title-secondary {
+    color: #233148;
+}
+
 .text-primary {
     color: #97a4be;
 }
@@ -177,7 +185,6 @@ p {
 }
 
 .services__title {
-    color: #233148;
     margin: 0 auto;
     max-width: 348px;
     text-align: center;
@@ -223,7 +230,6 @@ p {
 }
 
 .services-card__title {
-    color: #233148;
     margin-bottom: 28px;
 }
 
@@ -232,17 +238,14 @@ p {
 /* start company-info */
 .company-info {
     display: flex;
-}
-
-.empty-area {
     background-color: #323a4d;
-    flex-basis: 850px;
 }
 
 .get-more {
     flex-basis: 1070px;
     padding: 140px 0 135px 125px;
     background-color: rgb(245, 246, 250);
+    margin-left: auto;
 }
 
 .get-more__title {
@@ -253,5 +256,91 @@ p {
 .get-more__text {
     max-width: 476px;
 }
-
 /* end company-info */
+
+/* start app-presentation */
+.app-presentation {
+    padding-top: 112px;
+    padding-bottom: 102px;
+    background-color: #fff;
+}
+
+.app-presentation__offer {
+    display: flex;
+    margin-bottom: 110px;
+}
+
+.stable-and-ready {
+    max-width: 471px;
+    padding-top: 12px;
+    text-align: right;
+}
+
+.stable-and-ready__title {
+    margin-bottom: 49px;
+}
+
+.stable-and-ready__text {
+    margin-bottom: 46px;
+}
+
+.code-window {
+    max-width: 570px;
+    max-height: 363px;
+    margin: 0 0 0 auto;
+}
+
+.code-window__image {
+    display: block;
+}
+
+.app-presentation__advantages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-phone {
+    max-width: 471px;
+    margin: 0;
+}
+
+.advantages {
+    flex-basis: 544px;
+    margin-left: 0;
+}
+
+.advantages__item {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 30px 0 30px 85px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(35, 39, 51, 0.1);
+}
+
+.advantages__item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: #000;
+    top: 25px;
+    left: 30px;
+}
+
+.advantages__item--made-with::before {
+    background: url(../img/advantages-sprite.png) -13px -6px no-repeat;
+}
+
+.advantages__item--use::before {
+    background: url(../img/advantages-sprite.png) -117px -8px no-repeat;
+}
+
+.advantages__item--support::before {
+    background: url(../img/advantages-sprite.png) -68px -10px no-repeat;
+}
+
+.advantages__item--flat::before {
+    background: url(../img/advantages-sprite.png) -166px -7px no-repeat;
+}
