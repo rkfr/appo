@@ -406,3 +406,54 @@ p {
 .requirements-figure__image {
     display: block;
 }
+/* end app-presentation */
+
+/* start video-section */
+.video-section {
+    padding-top: 205px;
+    padding-bottom: 225px;
+    background-color: #223047;
+}
+
+
+.video {
+    max-width: 738px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video__icon {
+    position: relative;
+    margin: 0 auto 30px auto;
+    width: 96px;
+    height: 96px;
+    background-color: rgb(0, 255, 240);
+    border-radius: 50%;
+}
+
+.video__icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-17%, -50%);
+    border: 15px solid transparent;
+    border-left: 23px solid #223047;
+    width: 0;
+    height: 0;
+}
+
+.video__link {
+    display: block;
+}
+
+.video__title {
+    margin-bottom: 48px;
+}
+
+.video__title,
+.video__text {
+    color: #fff;
+    opacity: .8;
+}
