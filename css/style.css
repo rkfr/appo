@@ -457,3 +457,57 @@ p {
     color: #fff;
     opacity: .8;
 }
+/* end video-section */
+
+/* start download-part */
+.download-part {
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 192px;
+    position: relative;
+}
+
+.download-part::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 938px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 118px;
+    background: url(../img/map.png) center center no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.download-part__title {
+    margin-bottom: 32px;
+    color: #233148;
+}
+
+.download-part__text {
+    margin-bottom: 65px;
+    color: rgb(35, 49, 72);
+}
+
+.download-part__button {
+    color: #233148;
+    text-transform: uppercase;
+    padding: 16px 41px 23px 48px;
+    box-shadow: 0px 8px 24px 0px rgba(0, 255, 241, 0.5);
+}
+
+.download-part__text,
+.download-part__button {
+    font-size: 1.0625rem;    
+}
+
+.download-part__title,
+.download-part__text,
+.download-part__button {
+    z-index: 1;
+    position: relative;
+}
+/* end download-part */
