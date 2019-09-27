@@ -547,3 +547,113 @@ p {
     opacity: .9;
 }
 /* end quote */
+
+/* start app-add */
+.app-add {
+    padding: 85px 0;
+    background-color: #f5f6fa;
+}
+
+.get-app {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-app-images {
+    margin-left: 105px;
+    flex-basis: 400px;
+    position: relative;
+}
+
+.get-app-images__large-image,
+.get-app-images__large-small {
+    display: block;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0 4px 8px #00fff1);
+}
+
+.get-app-images__large-image {
+    max-height: 508px;
+    max-width: 244px;
+    position: relative;
+    z-index: 1;
+}
+
+.get-app-images__large-small {
+    max-height: 389px;
+    max-width: 187px;
+    position: absolute;
+    right: 34px;
+    top: 88px;
+    z-index: 0;
+}
+
+.now-avaliable {
+    max-width: 470px;
+    padding-top: 122px;
+    margin-right: 110px;
+}
+
+.now-avaliable__title {
+    margin-bottom: 30px;
+}
+
+.now-avaliable__text {
+    margin-bottom: 58px;
+    font-size: 1.0625rem;
+}
+
+.get-it-socials {
+    display: flex;
+}
+
+.get-it-socials__item {
+    background-color: #000;
+    padding: 5px 8px 5px 42px;
+    color: #fff;
+    border-radius: 7px;
+    position: relative;
+}
+
+.stores-item::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    background-size: 300%;
+}
+
+.stores-item--gp::before {
+    background: url(../img/stores-sprite.png) -6px center no-repeat;
+}
+
+.stores-item--app-store::before {
+    background: url(../img/stores-sprite.png) -50px center no-repeat;
+}
+
+.get-it-socials .get-it-socials__item:last-child {
+    margin-left: 27px;
+}
+
+.stores-item__get,
+.stores-item__store-name {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.stores-item__get {
+    font-size: 0.7rem;
+    opacity: .8;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+
+.stores-item__store-name {
+    opacity: .95;
+    font-size: 1.25rem;
+}
+/* end app-add */
