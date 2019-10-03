@@ -16,8 +16,8 @@
                 <div class="logo">
                     <span class="logo__name">appo</span>
                 </div>
-                <nav class="nav-menu-wrapper">
-                    <ul class="nav-menu">
+                <nav class="nav-menu">
+                    <ul class="nav-menu__list">
                         <li class="nav-menu__item">
                             <a class="nav-menu__link link" href="#">
                                 Home
@@ -35,7 +35,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div>
+                <div class="buttons-group">
                     <button class="get-app button button-primary">Get The App</button>
                 </div>
             </div>
@@ -57,49 +57,49 @@
                         <button class="button button-secondary">Reach Out To Us</button>
                     </div>
                 </div>
-                <div class="phone-container">
-                    <img src="img/new-smartphone.png" alt="Smartphone" class="phone">
+                <div class="phone">
+                    <img src="img/new-smartphone.png" alt="Smartphone" class="phone__image">
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <article class="services">
+        <section class="services">
             <div class="container">
                 <h2 class="services__title title-secondary">Everything needed to power your app brend online</h2>
-                <div class="services-cards">
-                    <section class="services-card">
-                        <div class="services-card__image-container"><img src="img/flat-design.png" alt="Modern Flat Design" class="services-card__image"></div>
-                        <h3 class="services-card__title title-secondary">Modern Flat Design</h3>
-                        <p class="services-card__text">
+                <ul class="services-cards">
+                    <li class="services-cards__card">
+                        <div class="services-cards__image"><img src="img/flat-design.png" alt="Modern Flat Design" class="services-card__image"></div>
+                        <h3 class="services-cards__title title-secondary">Modern Flat Design</h3>
+                        <p class="services-cards__text">
                             Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diamdo.
                         </p>
-                    </section>
-                    <section class="services-card">
-                        <div class="services-card__image-container"><img src="img/7-days.png" alt="First 7 Days Free" class="services-card__image"></div>
-                        <h3 class="services-card__title title-secondary">First 7 Days Free</h3>
-                        <p class="services-card__text">
+                    </li>
+                    <li class="services-cards__card">
+                        <div class="services-cards__image"><img src="img/7-days.png" alt="First 7 Days Free" class="services-card__image"></div>
+                        <h3 class="services-cards__title title-secondary">First 7 Days Free</h3>
+                        <p class="services-cards__text">
                             Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diamdo.
                         </p>
-                    </section>
-                    <section class="services-card">
-                        <div class="services-card__image-container"><img src="img/fully-support.png" alt="Fully Support" class="services-card__image"></div>
-                        <h3 class="services-card__title title-secondary">Fully Support</h3>
-                        <p class="services-card__text">
+                    </li>
+                    <li class="services-cards__card">
+                        <div class="services-cards__image"><img src="img/fully-support.png" alt="Fully Support" class="services-card__image"></div>
+                        <h3 class="services-cards__title title-secondary">Fully Support</h3>
+                        <p class="services-cards__text">
                             Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diamdo.
                         </p>
-                    </section>
-                    <section class="services-card">
-                        <div class="services-card__image-container"><img src="img/user-friendly.png" alt="User Friendly" class="services-card__image"></div>
-                        <h3 class="services-card__title title-secondary">User Friendly</h3>
-                        <p class="services-card__text">
+                    </li>
+                    <li class="services-cards__card">
+                        <div class="services-cards__image"><img src="img/user-friendly.png" alt="User Friendly" class="services-card__image"></div>
+                        <h3 class="services-cards__title title-secondary">User Friendly</h3>
+                        <p class="services-cards__text">
                             Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diamdo.
                         </p>
-                    </section>
-                </div>
+                    </li>
+                </ul>
             </div>
-        </article>
-        <div class="company-info">
+        </section>
+        <section class="company-info">
             <article class="get-more">
                 <h2 class="get-more__title title-primary">Get More From Your Smartphone</h2>
                 <p class="get-more__text">
@@ -110,8 +110,8 @@
                     Donec rutrum congue leo eget malesuada.
                 </p>
             </article>
-        </div>
-        <div class="app-presentation">
+        </section>
+        <section class="app-presentation">
             <div class="container">
                 <div class="app-presentation__offer">
                     <article class="stable-and-ready">
@@ -173,8 +173,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="video-section">
+        </section>
+        <section class="video-section">
             <section class="video">
                 <div class="video__icon"><a href="#" class="video__link"></a></div>
                 <h3 class="video__title">WATCH THE VIDEO</h3>
@@ -182,7 +182,7 @@
                     elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. 
                     Vestibulum ac diam sit amet quam.</p>
             </section>
-        </div>
+        </section>
         <section class="download-part">
             <h2 class="download-part__title">Join The Thousands of satisfied users</h2>
             <p class="download-part__text">It’s just a few clicks away</p>
@@ -190,14 +190,14 @@
                 <button class="button download-part__button button-primary">Download</button>
             </div>
         </section>
-        <div class="quote-container">
-            <blockquote class="quote">
+        <section class="quote">
+            <blockquote class="quote__blockquote">
                 “Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
                  Curabitur aliquet quam id dui posuere blandit.Donec rutrum congue leo eget malesuada. Praesent sapien massa, con non nisi.
                   Curabitur aliquet quam id dui posuere blandit.”
             </blockquote>
-        </div>
-        <div class="app-add">
+        </section>
+        <section class="app-add">
             <div class="container">
                 <div class="get-app">
                     <div class="get-app-images">
@@ -224,7 +224,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>

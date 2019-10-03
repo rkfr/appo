@@ -126,11 +126,11 @@ p {
     align-items: center;
 }
 
-.nav-menu-wrapper {
+.nav-menu {
     flex-basis: 203px;
 }
 
-.nav-menu {
+.nav-menu__list {
     display: flex;
     justify-content: space-between;
 }
@@ -148,6 +148,11 @@ p {
     padding-top: 192px;
     padding-bottom: 108px;
     position: relative;
+}
+
+.offer .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .choose-way {
@@ -173,13 +178,13 @@ p {
     margin-left: 25px;
 }
 
-.phone-container {
+.phone {
     position: absolute;
     right: 460px;
     top: 134px;
 }
 
-.phone {
+.phone__image {
     display: block;
     height: 582px;
     width: 280px;
@@ -219,7 +224,7 @@ p {
     align-items: center;
 }
 
-.services-card {
+.services-cards__card {
     padding: 25px 23px 30px 28px;
     text-align: center;
     max-width: 272px;
@@ -227,7 +232,7 @@ p {
     box-shadow: 0px 2px 4.8px 0.2px rgba(30, 43, 63, 0.1);
 }
 
-.services-card__image-container {
+.services-cards__image {
     width: 118px;
     height: 106px;
     margin: 0 auto 32px auto;
@@ -238,7 +243,7 @@ p {
     height: 100%;
 }
 
-.services-card__title {
+.services-cards__title {
     margin-bottom: 20px;
 }
 
@@ -532,12 +537,12 @@ p {
 /* end download-part */
 
 /* start quote */
-.quote-container {
+.quote {
     padding: 130px 0;
     background-color: #223047;
 }
 
-.quote {
+.quote__blockquote {
     text-align: center;
     max-width: 790px;
     color: rgb(0, 255, 241);
