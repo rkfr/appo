@@ -236,12 +236,29 @@ p {
     width: 118px;
     height: 106px;
     margin: 0 auto 32px auto;
+    background-size: 500%;
 }
 
-.services-card__image {
+.services-cards__image--flat-design {
+    background: url(../img/services-sprite.png) 64.5% 40% no-repeat;
+}
+
+.services-cards__image--days-free {
+    background: url(../img/services-sprite.png) 34% 40% no-repeat;
+}
+
+.services-cards__image--support {
+    background: url(../img/services-sprite.png) 96.5% 40% no-repeat;
+}
+
+.services-cards__image--user-friendly {
+    background: url(../img/services-sprite.png)5.5% 40% no-repeat;
+}
+
+/* .services-card__image {
     width: 100%;
     height: 100%;
-}
+} */
 
 .services-cards__title {
     margin-bottom: 20px;
