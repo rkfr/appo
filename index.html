@@ -15,40 +15,74 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <span class="logo__name">appo</span>
-                </div>
-                <nav class="nav-menu">
-                    <ul class="nav-menu__list">
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link link" href="#">
-                                Home
+        <div class="top-bar">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <span class="logo__name">appo</span>
+                    </div>
+                    <nav class="nav-menu">
+                        <ul class="nav-menu__list">
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link link" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link link" href="#">
+                                    Features
+                                </a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link link" href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-button">
+                        <button class="header-button__button button button-primary">Get The App</button>
+                        <div class="burger-menu">
+                            <a href="#" class="burger-menu__button">
+                                <span class="burger-menu__line"></span>
                             </a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link link" href="#">
-                                Features
-                            </a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link link" href="#">
-                                Pricing
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header-button">
-                    <button class="header-button__button button button-primary">Get The App</button>
+                            <nav class="burger-menu__nav">
+                                <ul class="burger-menu__list">
+                                    <li class="burger-menu__item">
+                                        <a href="#offer" class="burger-menu__link">Offer</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a href="#services" class="burger-menu__link">Services</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a href="#app-presentation" class="burger-menu__link">Presentation</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a href="#video-section" class="burger-menu__link"> Watch the video</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a href="#download-part" class="burger-menu__link">Download</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a href="#get-app" class="burger-menu__link">Get App</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a href="#contacts" class="burger-menu__link">Contacts</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-        <div class="offer">
+
+        <div class="offer" id="offer">
             <div class="container">
                 <div class="choose-way">
                     <h1 class="choose-way__title">
@@ -71,7 +105,7 @@
         </div>
     </header>
     <main>
-        <div class="services">
+        <div class="services" id="services">
             <div class="container">
                 <h2 class="services__title title-secondary">Everything needed to power your app brend online</h2>
                 <ul class="services-cards">
@@ -118,7 +152,7 @@
                 </p>
             </section>
         </div>
-        <div class="app-presentation">
+        <div class="app-presentation" id="app-presentation">
             <div class="container">
                 <div class="app-presentation__offer">
                     <article class="stable-and-ready">
@@ -181,7 +215,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-section">
+        <div class="video-section" id="video-section">
             <section class="video">
                 <div class="video__icon"><a href="#" class="video__link" aria-label="play video link"></a></div>
                 <h3 class="video__title">WATCH THE VIDEO</h3>
@@ -190,7 +224,7 @@
                     Vestibulum ac diam sit amet quam.</p>
             </section>
         </div>
-        <section class="download-part">
+        <section class="download-part" id="download-part">
             <h2 class="download-part__title">Join The Thousands of satisfied users</h2>
             <p class="download-part__text">It’s just a few clicks away</p>
             <div class="button-container">
@@ -204,7 +238,7 @@
                   Curabitur aliquet quam id dui posuere blandit.”
             </blockquote>
         </div>
-        <div class="app-add">
+        <div class="app-add" id="get-app">
             <div class="container">
                 <div class="get-app">
                     <div class="get-app-images">
@@ -236,7 +270,7 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer-navigation">
                 <ul class="footer-navigation__list">
@@ -315,8 +349,9 @@
                     Subscribe to our newsletter and get notification for upcoming cool sutff.
                 </p>
                 <form class="get-in__form">
-                    <label for="get-in__input"></label>
-                    <input type="text" class="get-in__input" id="get-in__input">
+                    <label class="get-in__label" for="get-in__input">
+                        <input type="text" class="get-in__input" id="get-in__input" name="get-in">
+                    </label>
                     <button class="button button-primary get-in__button">Count me in</button>
                 </form>
             </article>

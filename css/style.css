@@ -144,10 +144,118 @@ p {
     color: #fff;
 }
 
-.separator {
-    height: 1px;
-    background-color: rgb(78, 89, 108);
+.header-button {
+    display: flex;
+    align-items: center;
 }
+
+.header-button__button {
+    margin-right: 27px;
+    transition: .5s;
+}
+
+/*start burger-menu */
+
+.burger-menu__button {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+  
+.burger-menu--active .burger-menu__button {
+    
+}
+
+/* .burger-menu--active .burger-menu__button {
+    position: fixed;
+    z-index: 2;
+    top: 15px;
+    right: 25px;
+} */
+
+.burger-menu__line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .1s;
+}
+
+.burger-menu__line::before,
+.burger-menu__line::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transition: .6s;
+}
+
+.burger-menu__line::before {
+    bottom: 10px;
+}
+
+.burger-menu__line::after {
+    top: 10px;
+}
+
+.burger-menu--active .burger-menu__line {
+    background-color: transparent;
+    transition: .9s;
+}
+
+.burger-menu--active .burger-menu__line::before,
+.burger-menu--active .burger-menu__line::after {
+    top: 0;
+}
+
+.burger-menu--active .burger-menu__line::before {
+    transform: rotate(-45deg);
+}
+
+.burger-menu--active .burger-menu__line::after {
+    transform: rotate(45deg);
+}
+
+.burger-menu__list {
+    background-color: #f5f6fa;
+    padding: 100px 124px 0 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: .5s;
+    transform: translateX(390px);
+}
+
+.burger-menu__item {
+    padding-bottom: 1.7rem;
+}
+
+.burger-menu__link {
+    color: #323a4d;
+    font-size: 1.375rem;
+}
+
+.burger-menu--active .burger-menu__list {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.top-bar {
+    width: 100%;
+    border-bottom: 1px solid rgb(78, 89, 108);
+    position: relative;
+    z-index: 2;
+}
+/* end burger-menu */
 
 .offer {
     padding-top: 192px;
@@ -510,6 +618,7 @@ p {
     padding-top: 250px;
     padding-bottom: 192px;
     position: relative;
+    z-index: 0;
 }
 
 .download-part::before {
@@ -750,8 +859,14 @@ p {
     max-width: 770px;
 }
 
-.get-in__input {
+.get-in__label {
     flex-basis: 570px;
+}
+
+.get-in__input {
+    display: block;
+    width: 100%;
+    height: 100%;
     background-color: #f5f6fa;
     border: none;
     padding: 0 25px;
