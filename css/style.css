@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Dosis-Medium", sans-serif;
+    font-family: "Dosis-Regular", sans-serif;
     font-size: 0.875rem;
     color: rgb(151, 164, 190);
 }
@@ -240,19 +240,19 @@ p {
 }
 
 .services-cards__image--flat-design {
-    background: url(../img/services-sprite.png) 64.5% 40% no-repeat;
+    background: url(../img/icons/services-sprite.png) 64.5% 40% no-repeat;
 }
 
 .services-cards__image--days-free {
-    background: url(../img/services-sprite.png) 34% 40% no-repeat;
+    background: url(../img/icons/services-sprite.png) 34% 40% no-repeat;
 }
 
 .services-cards__image--support {
-    background: url(../img/services-sprite.png) 96.5% 40% no-repeat;
+    background: url(../img/icons/services-sprite.png) 96.5% 40% no-repeat;
 }
 
 .services-cards__image--user-friendly {
-    background: url(../img/services-sprite.png)5.5% 40% no-repeat;
+    background: url(../img/icons/services-sprite.png)5.5% 40% no-repeat;
 }
 
 /* .services-card__image {
@@ -374,19 +374,19 @@ p {
 }
 
 .advantages__item--made-with::before {
-    background: url(../img/advantages-sprite.png) -13px -6px no-repeat;
+    background: url(../img/icons/advantages-sprite.png) -13px -6px no-repeat;
 }
 
 .advantages__item--use::before {
-    background: url(../img/advantages-sprite.png) -117px -8px no-repeat;
+    background: url(../img/icons/advantages-sprite.png) -117px -8px no-repeat;
 }
 
 .advantages__item--support::before {
-    background: url(../img/advantages-sprite.png) -68px -10px no-repeat;
+    background: url(../img/icons/advantages-sprite.png) -68px -10px no-repeat;
 }
 
 .advantages__item--flat::before {
-    background: url(../img/advantages-sprite.png) -166px -7px no-repeat;
+    background: url(../img/icons/advantages-sprite.png) -166px -7px no-repeat;
 }
 
 .requirements-container {
@@ -432,7 +432,7 @@ p {
     position: absolute;
     width: 23px;
     height: 23px;
-    background: url(../img/checkmark.png) center center no-repeat;
+    background: url(../img/icons/checkmark.png) center center no-repeat;
     background-size: 100%;
     left: -40px;
     top: 0;
@@ -573,13 +573,14 @@ p {
 
 /* start app-add */
 .app-add {
-    padding: 85px 0;
+    padding-top: 85px;
     background-color: #f5f6fa;
 }
 
 .get-app {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 47px;
 }
 
 .get-app-images {
@@ -650,11 +651,11 @@ p {
 }
 
 .stores-item--gp::before {
-    background: url(../img/stores-sprite.png) -6px center no-repeat;
+    background: url(../img/icons/stores-sprite.png) -6px center no-repeat;
 }
 
 .stores-item--app-store::before {
-    background: url(../img/stores-sprite.png) -50px center no-repeat;
+    background: url(../img/icons/stores-sprite.png) -50px center no-repeat;
 }
 
 .get-it-socials .get-it-socials__item:last-child {
@@ -679,6 +680,20 @@ p {
     opacity: .95;
     font-size: 1.25rem;
 }
+
+.get-app-today__button {
+    margin: 0 auto;
+    display: block;
+    padding: 25px 112px;
+    font-size: 1.0625rem;
+    font-family: "Dosis-Medium";
+    font-weight: 500;
+    border-radius: 0;
+    box-shadow: 0px 8px 24px 0px rgba(0, 255, 241, 0.5);
+    text-transform: uppercase;
+    position: relative;
+    transform: translateY(50%);
+}
 /* end app-add */
 
 /* start footer */
@@ -701,8 +716,6 @@ p {
     font-family: "Dosis-Bold", sans-serif;
     font-weight: 500;
 }
-
-.contacts-list {}
 
 .contacts-list__item:not(:last-child) {
     margin-bottom: 15px;
@@ -736,6 +749,9 @@ p {
     flex-basis: 570px;
     background-color: #f5f6fa;
     border: none;
+    padding: 0 25px;
+    color: #233148;
+    font-size: 1.25rem;
 }
 
 .get-in__button {
@@ -752,9 +768,52 @@ p {
     background-color: rgb(34, 48, 71);
 }
 
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-logo__logo {
     color: rgb(0, 255, 241);
     font-size: 1.0625rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 330px;
+}
+
+.socials__item {
+    flex-basis: 34px;
+    height: 34px;
+}
+
+.socials__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.socials__link--facebook {
+    background: url(../img/icons/socials-sprite.png) 7% 50% no-repeat;
+}
+
+.socials__link--twitter {
+    background: url(../img/icons/socials-sprite.png) 28% 50% no-repeat;
+}
+
+.socials__link--dribble {
+    background: url(../img/icons/socials-sprite.png) 48% 50% no-repeat;
+}
+
+.socials__link--gplus {
+    background: url(../img/icons/socials-sprite.png) 69% 50% no-repeat;
+}
+
+.socials__link--youtube {
+    background: url(../img/icons/socials-sprite.png) 90% 50% no-repeat;
 }
 
 /* end footer */
