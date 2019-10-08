@@ -788,6 +788,12 @@ p {
     color: #fff;
     opacity: .8;
 }
+
+@media screen and (max-width: 992px) {
+    .video-section {
+        padding: 105px 0;
+    }
+}
 /* end video-section */
 
 /* start download-part */
@@ -843,6 +849,18 @@ p {
 .download-part__button {
     z-index: 1;
     position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    .download-part {
+        padding: 150px 0 130px;
+    }
+
+    .download-part::before {
+        background-size: contain;
+        max-width: 600px;
+        top: 30px;
+    }
 }
 /* end download-part */
 
