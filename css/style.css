@@ -64,6 +64,31 @@ p {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
 .button {
     padding: 9px 24px 13px 27px;
     border: 1px solid transparent;
@@ -163,17 +188,6 @@ p {
     position: relative;
     z-index: 2;
 }
-  
-/* .burger-menu--active .burger-menu__button {
-    
-} */
-
-/* .burger-menu--active .burger-menu__button {
-    position: fixed;
-    z-index: 2;
-    top: 15px;
-    right: 25px;
-} */
 
 .burger-menu__line {
     display: block;
@@ -266,11 +280,6 @@ p {
     position: relative;
 }
 
-.offer .container {
-    display: flex;
-    justify-content: space-between;
-}
-
 .choose-way {
     max-width: 422px;
     margin-left: 102px;
@@ -305,9 +314,40 @@ p {
     height: 582px;
     width: 280px;
 }
-/* header end */
 
-/* services start */
+
+@media screen and (max-width: 1600px) {
+    .phone {
+        right: 100px;
+        top: 80px;
+    }
+
+    .phone__image {
+        height: 482px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .offer {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .choose-way {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* end header */
+
+/* start services */
 .services {
     padding-top: 203px;
     padding-bottom: 119px;
@@ -371,13 +411,37 @@ p {
     background: url(../img/icons/services-sprite.png)5.5% 40% no-repeat;
 }
 
-/* .services-card__image {
-    width: 100%;
-    height: 100%;
-} */
-
 .services-cards__title {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .services {
+        padding-top: 150px;
+        padding-bottom: 86px;
+    }
+
+    .services__title {
+        margin-bottom: 120px;
+    }
+
+    .services__title::after {
+        bottom: -32px;    
+    }
+
+    .services-cards {
+        flex-wrap: wrap;
+    }
+
+    .services-cards__card {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .services-cards__card {
+        max-width: 334px;
+    }
 }
 
 /* end services */
@@ -402,6 +466,27 @@ p {
 
 .get-more__text {
     max-width: 476px;
+}
+
+@media screen and (max-width: 1500px) {
+    .get-more {
+        flex-basis: 900px;
+    }
+
+    .get-more__title {
+        max-width: max-content;
+    }
+    
+    .get-more__text {
+        max-width: 560px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .get-more {
+        padding: 100px 0 100px 80px;
+        flex-basis: 730px;
+    }
 }
 /* end company-info */
 
@@ -561,6 +646,96 @@ p {
 
 .requirements-figure__image {
     display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .stable-and-ready {
+        max-width: 400px;
+    }
+
+    .code-window {
+        max-width: 500px;
+    }
+
+    .code-window__image {
+        width: 100%;
+    }
+
+    .advantages  {
+        flex-basis: 430px;
+    }
+
+    .news-phone {
+        max-width: 400px;
+    }
+
+    .news-phone__image {
+        width: 100%;
+        top: 0;
+    }
+
+    .requirements-figure {
+        max-width: 400px;
+    }
+
+    .requirements-figure__image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .app-presentation__offer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .code-window {
+        order: -1;
+        margin: 0;
+    }
+
+    .stable-and-ready {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .app-presentation__advantages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-phone {
+        max-width: 320px;
+        margin-bottom: 55px;
+    }
+
+    .advantages {
+        flex-basis: unset;
+        width: 100%;
+        max-width: 550px;
+        margin-bottom: 80px;
+    }
+
+    .requirements {
+        display: block;
+    }
+
+    .requirements-list {
+        margin: 0 auto 44px auto;
+        transform: translateX(40%);
+    }
+
+    .requirements-figure {
+        margin: 0 auto;
+    }
+
+    .requirements-offer {
+        margin: 0 auto 80px auto;
+        max-width: 500px;
+        text-align: center;
+        padding: 0;
+    }
 }
 /* end app-presentation */
 
@@ -932,5 +1107,4 @@ p {
 .socials__link--youtube {
     background: url(../img/icons/socials-sprite.png) 90% 50% no-repeat;
 }
-
 /* end footer */
