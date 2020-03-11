@@ -9,9 +9,13 @@
         const menu = get('.burger-menu');
         const button = get('.burger-menu__button');
         const links = getAll('.burger-menu__link');
+        const buttonsContainer = get('.header-button');
 
         [button, ...links].forEach(item => item.addEventListener('click', 
-            () => menu.classList.toggle('burger-menu--active')
+            () => {
+                buttonsContainer.classList.toggle('header-button--active');
+                menu.classList.toggle('burger-menu--active')
+            }
         ));
     };
 
